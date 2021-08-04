@@ -1,0 +1,30 @@
+.dataParse-file{
+    margin: 10px auto;
+    width: 40%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.301);
+    padding: 10px 16px;
+    height : 150px;
+    text-align: center;
+}
+
+.dataParse-search{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px auto;
+    width: 70vw;
+}
+
+.dataParser-reset{
+    width: 80px;
+    height: 25px;
+    padding: 4px;
+    background-color:#5cb85c;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
