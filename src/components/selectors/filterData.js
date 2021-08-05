@@ -25,6 +25,7 @@ export const filterData = (data,details) => {
         else if(details.pinCode && details.item && details.date){
             return ele.orderDate === dateFormat && itemsList(ele.items, details.item) && ele.deliveryPincode.includes(details.pinCode.trim())
         }
+
     })
     return result
 }
@@ -42,7 +43,7 @@ const itemsList = (str, search) => {
     })
     let status = false
     result.forEach((ele) => {
-        if(ele.includes(search)){
+        if(ele.includes(search.toLowerCase().trim())){
             status = true
         }
     })

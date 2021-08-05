@@ -18,6 +18,7 @@ const DataParse = (props) => {
     const [ status, setStatus ] = useState(false)
 
     const parsedData = JSON.parse(sessionStorage.getItem('fileData'))
+    // console.log(parsedData, 'storage')
 
     //  handle csv file
 
@@ -26,6 +27,8 @@ const DataParse = (props) => {
         csvParser(fileName, function(result){
             sessionStorage.setItem('fileData', JSON.stringify(result))
             setData(result)
+            setSearch({date:'', pinCode:'', item:''})
+            setSort('')
             setStatus(true)
         })        
     }
@@ -57,10 +60,10 @@ const DataParse = (props) => {
             details.item = value
             setSearch(details)
         }
-        // console.log(details)
+       
         
         const result = filterData(parsedData, details) 
-        // console.log(result)
+        
 
         if(details.pinCode || details.date || details.item){
             setData(result)
@@ -76,7 +79,8 @@ const DataParse = (props) => {
         const sortValue = e.target.value
         setSort(sortValue)
 
-        const result = sortData(sortValue, data)
+        const result = sortData(sortValue, [...data])
+        
 
         if(sortValue === ''){
             setData(parsedData)
