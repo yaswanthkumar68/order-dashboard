@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Orders Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Orders dashboard app generates list of all orders information in a table by taking  CSV data of orders. User can filter orders by pincode, date, item name and can use all at a time. Along with user can  sort the data by date and pincode.
 
-## Available Scripts
+## Requirements
+* CSV data of orders in prescribed format
 
-In the project directory, you can run:
+For demo of application,  https://customers-order-dashboard.netlify.app/
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* After opening app user need to upload orders CSV data in prescribed format.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![file-upload](https://user-images.githubusercontent.com/87310224/128310757-7e2d3f83-b6ea-4335-a6b0-5c1da01d5cd6.png)
 
-### `npm test`
+* Once user upload the orders data in CSV format, all the orders information will display in table.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![fileuploaded](https://user-images.githubusercontent.com/87310224/128313813-cb48ee40-bd50-445d-a4dc-7e6e12060ed8.png)
 
-### `npm run build`
+* Now user can filter the data by pincode, date, item name and all at a time.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+By pincode
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![filter-pincode](https://user-images.githubusercontent.com/87310224/128314439-7a42061c-7d39-4555-a112-ea8479cbfe51.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+By item name
 
-### `npm run eject`
+![filter-itemname](https://user-images.githubusercontent.com/87310224/128315147-75b4df91-1157-476f-a2fc-8c964dcd117f.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+By order date
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![filter-orderdate](https://user-images.githubusercontent.com/87310224/128315552-438dc133-5b4e-4f2d-bf4f-f3d0c8c319b1.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+By all filters
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![filter-all](https://user-images.githubusercontent.com/87310224/128315763-caf2dd31-b628-42fd-941b-dc27fc09aa68.png)
 
-## Learn More
+* User can sort the data by order date and pincode in both ascending and descending order.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+By pincode
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![sort-pincode](https://user-images.githubusercontent.com/87310224/128316738-4a4b1a94-c3c3-48e6-aef7-85ab183a19ae.png)
 
-### Code Splitting
+By order date
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![sort-orderdate](https://user-images.githubusercontent.com/87310224/128316991-853b9e11-7dfb-4a63-9b47-4d425bb282d1.png)
 
-### Analyzing the Bundle Size
+* user can also able to sort the filter data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![filter-sort](https://user-images.githubusercontent.com/87310224/128317575-99906f9d-6784-4909-a801-25b1a9d53df3.png)
 
-### Making a Progressive Web App
+* User can reset all the filter and sort functions by clicking on reset button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
